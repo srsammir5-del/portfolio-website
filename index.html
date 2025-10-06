@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My first portfolio website </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo" style="color: tomato;"> wellcome to my new website </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button>submit</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2 style="color: darkblue;">Welcome to My Website</h2>
+    <p> lets introduce myself, <br style="color: chartreuse;"> my name is samir hossen raju </p>
+    <a href="#services" class="btn">Explore Services</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p style="color: maroon;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a magni nesciunt maiores distinctio dolore cumque reiciendis, modi dolorum ullam maxime delectus, eius saepe, eos explicabo sed impedit porro ad!
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p> see my web degine</p>
+      </div>
+      <div class="service-card">
+        <h3>Frontend Development</h3>
+        <p> i create a websites with HTML and CSS </p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Optimization</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi qui consequuntur sequi et dolore repellat! Nemo exercitationem nam adipisci consectetur?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What My Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"An amazing developer! The website looks fantastic and runs perfectly."</p>
+        <h4 style="color: indigo;"> fahim review </h4>
+      </div>
+      <div class="testimonial">
+        <p>"Very professional and delivered the project ahead of schedule."</p>
+        <h4 style="color: chartreuse;">joy review </h4>
+      </div>
+      <div class="testimonial">
+        <p>"Highly recommend! Excellent communication and top-notch results."</p>
+        <h4 style=" color: black;"> masud review </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  samir hossen raju. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- Script -->
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
+
